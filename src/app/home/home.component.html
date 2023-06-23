@@ -6,7 +6,7 @@
         <div class="article-card" *ngFor="let article of articles">
             <h1 class="article-card-title">{{article.title}}</h1>
             <p class="article-card-desc">{{article.description}}</p>
-            <br />
+            <br/>
             <a [routerLink]="['/article', article.id]" class="rlink">...</a>
         </div>
     </div>
