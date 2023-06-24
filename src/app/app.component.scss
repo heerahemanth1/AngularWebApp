@@ -1,20 +1,140 @@
 
-.nav {
-    background-color: #eeeeee;
-    padding: 0.3rem;
-    display: flex;
+#logo {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
 }
 
-.rlink {
-    display: flex;
+a.rlink {
+    text-decoration: none;
 }
 
-#app-icon {
-    padding: 0.5rem;
-    padding-bottom: 0;
-    color: #FFFFFF;
-    background-color: #777777;
-    font-size: 1.5rem;
+.rlink #app-icon {
+    color: #555555;
+    font-family: sans-serif;
+    font-size: 2.4rem;
     font-weight: 700;
-    border-radius: 0.5rem;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked ~ #nav-bg {
+    transform: scale(150);
+}
+
+#nav-toggle:checked ~ nav {
+    opacity: 1;
+    width: 100%;
+}
+
+#nav-button {
+    background-color: #AAAAAA;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 200;
+}
+
+#nav-icon {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+#nav-icon, #nav-icon::before, #nav-icon::after {
+    width: 1.7rem;
+    height: 3px;
+    background-color: #777777;
+    display: inline-block;
+    transition: all .3s;
+}
+
+#nav-icon::before, #nav-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+#nav-icon::before {
+    top: -.6rem;
+}
+
+#nav-icon::after {
+    top: .6rem;
+}
+
+#nav-toggle:checked + #nav-button #nav-icon {
+    background-color: transparent;
+}
+
+#nav-toggle:checked + #nav-button #nav-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+#nav-toggle:checked + #nav-button #nav-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+#nav-bg {
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    background-image: radial-gradient(#777, #333);
+    position: fixed;
+    top: 2.1rem;
+    right: 2.1rem;
+    z-index: 100;
+    transition: transform .8s;
+}
+
+nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 150;
+
+    opacity: 0;
+    width: 0;
+}
+
+#nav-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    margin: 1rem;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #CCC 50%);
+    background-size: 520%;
+    transition: all .6s;
+}
+
+.nav-item:hover,.nav-item:active {
+    background-position: 100%;
+    color: #000000;
 }
