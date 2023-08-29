@@ -1,4 +1,5 @@
-<div id="home-component">
+
+<div id="global-nav">
     <div id="logo">
         <a routerLink="/home" class="rlink"><span id="app-icon">H</span></a>
     </div>
@@ -16,16 +17,5 @@
                 <li class="nav-item">04 Item 4</li>
             </ul>
         </nav>
-    </div>
-    <div id="home-poster">
-        <span id="poster-title">{{title}}</span>
-    </div>
-    <div id="article-grid">
-        <div class="article-card" *ngFor="let article of articles">
-            <h1 class="article-card-title">{{article.title}}</h1>
-            <p class="article-card-desc">{{article.description}}</p>
-            <br/>
-            <a [routerLink]="['/article', article.id]" title="Read more" class="rlink">...</a>
-        </div>
     </div>
 </div>

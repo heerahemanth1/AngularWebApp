@@ -1,52 +1,17 @@
 
-@media (min-width: 1000px) and (orientation: landscape) {
-    #home-poster {
-        height: 95vh;
-    }
-
-    #poster-title {
-        font-size: 7rem;
-        letter-spacing: 0.8rem;
-    }
-
-    #article-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        grid-auto-rows: minmax(6rem, auto);
-    }
+#global-nav {
+    padding: 1rem;
 }
 
-@media (min-height: 800px) and (orientation: portrait) {
-    #home-poster {
-        height: 30vh;
-    }
-
-    #poster-title {
-        font-size: 3rem;
-        letter-spacing: 1rem;
-    }
-}
-
-#logo {
-    display: inline-block;
-    height: 3rem;
-    width: 3rem;
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    z-index: 100;
-}
-
-a.rlink {
+#logo .rlink {
     text-decoration: none;
 }
 
-.rlink #app-icon {
-    color: #555555;
+#app-icon {
     font-family: sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
+    color: #555555;
 }
 
 #nav-toggle {
@@ -120,7 +85,7 @@ a.rlink {
     height: 2.8rem;
     width: 2.8rem;
     border-radius: 50%;
-    background-image: radial-gradient(#777, #333);
+    background-image: radial-gradient(#777777, #333333);
     position: fixed;
     top: 2.1rem;
     right: 2.1rem;
@@ -157,7 +122,7 @@ nav {
     text-transform: uppercase;
     padding: 1rem 2rem;
     margin: 1rem;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #CCC 50%);
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #CCCCCC 50%);
     background-size: 520%;
     transition: all .6s;
 }
@@ -165,32 +130,4 @@ nav {
 .nav-item:hover,.nav-item:active {
     background-position: 100%;
     color: #000000;
-}
-
-#home-poster {
-    background: linear-gradient(to right bottom, #777777, #FFFFFF);
-    position: relative;
-}
-
-#poster-title {
-    font-weight: 600;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#article-grid {
-    padding: 0.5rem;
-}
-
-.rlink {
-    text-decoration: none;
-    padding: 0.3rem 0.2rem 0;
-    margin-top: 0.2rem;
-    color: grey;
-}
-
-.article-card {
-    padding: 1rem;
 }
