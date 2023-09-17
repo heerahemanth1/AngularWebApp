@@ -1,5 +1,5 @@
 
-@media (min-width: 1000px) and (orientation: landscape) {
+@media (orientation: landscape) {
     #home-poster {
         height: 95vh;
     }
@@ -17,7 +17,7 @@
     }
 }
 
-@media (min-height: 800px) and (orientation: portrait) {
+@media (orientation: portrait) {
     #home-poster {
         height: 30vh;
     }
