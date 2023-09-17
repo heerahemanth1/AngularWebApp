@@ -1,5 +1,5 @@
 
-@media (orientation: landscape) {
+@media (min-width: 1000px) and (orientation: landscape) {
     #home-poster {
         height: 95vh;
     }
@@ -17,14 +17,14 @@
     }
 }
 
-@media (orientation: portrait) {
+@media (min-width: 520px) and (orientation: portrait) {
     #home-poster {
         height: 30vh;
     }
 
     #poster-title {
         font-size: 3rem;
-        letter-spacing: 1rem;
+        letter-spacing: 0.5rem;
     }
 }
 
