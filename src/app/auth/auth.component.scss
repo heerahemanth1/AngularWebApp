@@ -1,0 +1,19 @@
+#auth-component {
+    width: 30vw;
+    min-width: 300px;
+    max-width: 500px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    form {
+        padding: 1rem;
+        
+        input {
+            display: block;
+        }
+    }  
+}
+
+
+

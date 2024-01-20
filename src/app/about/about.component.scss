@@ -1,0 +1,36 @@
+
+@media(orientation: portrait) {
+    
+}
+
+#about-component {
+    width: 100%;
+    height: calc(100vh - 2rem);
+    padding: 1rem 2rem;
+    box-shadow: .5rem .5rem .5rem lightgray, -.5rem -.5rem .5rem lightgray;
+}
+
+#about-stage {
+    width: 100%;
+    height: 100%;
+}
+
+#about-image {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+#about-text {
+    display: inline-block;
+    width: 59%;
+    height: 100%;
+    overflow-y: hidden;
+    color: #777;
+    padding: 1rem 1rem;
+}
+
+
+
+
