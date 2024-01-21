@@ -1,18 +1,5 @@
-/*
-#global-nav {
-    padding: 1rem;
-}
-*/
-.rlink {
-    text-decoration: none;
-}
 
-#app-icon {
-    font-family: sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #555555;
-}
+@import './../shared/css/variables.scss';
 
 #nav-toggle {
     display: none;
@@ -111,13 +98,14 @@ nav {
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    overflow: hidden;
 }
 
 .nav-item {
     line-height: 1;
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 300;
-    color: #FFFFFF;
+    color: $primary-color-light;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 2rem;
@@ -129,5 +117,9 @@ nav {
 
 .nav-item:hover,.nav-item:active {
     background-position: 100%;
-    color: #000000;
+    color: $color-dark;
+
+    & a.rlink {
+        color: $color-dark;
+    }
 }
