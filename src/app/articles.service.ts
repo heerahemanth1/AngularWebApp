@@ -7,8 +7,8 @@ import { Article } from './models/article.model';
 })
 export class ArticlesService {
 
-    articles: Article[];
-    
+    private articles: Article[];
+
     constructor() {
         this.articles = Article.MapArray(ArticlesFromFile);
     }

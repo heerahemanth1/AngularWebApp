@@ -1,11 +1,17 @@
+
+<app-global-nav></app-global-nav>
 <div id="auth-component">
     <form>
-        <label for="username">Username</label>
-        <input type="text" id="username" required>
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" [(ngModel)]="username" required>
+        </div>
 
-        <label for="pwd">Password</label>
-        <input type="password" name="password" id="pwd" required>
+        <div class="form-input">
+            <label for="pwd">Password</label>
+            <input type="password" name="password" id="pwd" [(ngModel)]="password" required>
+        </div>
 
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" class="btn btn-submit" (onClick)="submitCredentials()">
     </form>
 </div>

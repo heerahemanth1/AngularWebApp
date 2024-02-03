@@ -1,34 +1,43 @@
+@import '../shared/css/variables.scss';
 
 @media(orientation: portrait) {
-    
+
 }
 
 #about-component {
     width: 100%;
     height: calc(100vh - 2rem);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
+    padding-right: 2rem;
     box-shadow: .5rem .5rem .5rem lightgray, -.5rem -.5rem .5rem lightgray;
 }
 
 #about-stage {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 #about-image {
     display: inline-block;
     width: 40%;
     height: 100%;
-    background-color: lightgray;
+    background: no-repeat center/cover url("../../assets/about-image.jpg");
 }
 
 #about-text {
     display: inline-block;
     width: 59%;
     height: 100%;
-    overflow-y: hidden;
-    color: #777;
+    overflow-y: auto;
+    color: $primary-color-dark;
     padding: 1rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    p:nth-child(n + 2) {
+        padding-top: 1em;
+    }
 }
 
 
