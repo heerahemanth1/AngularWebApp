@@ -7,11 +7,16 @@
             <input type="text" name="username" id="username" [(ngModel)]="username" required>
         </div>
 
+        <div class="form-input" *ngIf="isRegisterMode()">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" [(ngModel)]="email" required>
+        </div>
+
         <div class="form-input">
             <label for="pwd">Password</label>
             <input type="password" name="password" id="pwd" [(ngModel)]="password" required>
         </div>
 
-        <input type="submit" value="Login" class="btn btn-submit" (onClick)="submitCredentials()">
+        <button value="Login" class="btn btn-submit" (click)="submitCredentials()">Login</button>
     </form>
 </div>
