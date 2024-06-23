@@ -15,6 +15,7 @@ export class AuthComponent {
     public password: string = '';
 
     public authMode: EAuthMode = EAuthMode.Login;
+    public submitBtnStr: string = '';
 
     constructor(private route: ActivatedRoute) {
         this.route.url.subscribe((segments: UrlSegment[]) => {
@@ -25,6 +26,8 @@ export class AuthComponent {
                 } else {
                     this.authMode = EAuthMode.Login;
                 }
+
+                this.submitBtnStr = EAuthMode[this.authMode];
             }
         });
     }

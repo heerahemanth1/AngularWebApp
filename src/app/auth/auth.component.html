@@ -17,6 +17,6 @@
             <input type="password" name="password" id="pwd" [(ngModel)]="password" required>
         </div>
 
-        <button value="Login" class="btn btn-submit" (click)="submitCredentials()">Login</button>
+        <button [value]="submitBtnStr" class="btn btn-submit" (click)="submitCredentials()">{{submitBtnStr}}</button>
     </form>
 </div>
